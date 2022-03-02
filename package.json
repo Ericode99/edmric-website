@@ -1,0 +1,14 @@
+{
+  "name": "edmric-website",
+  "source": "index.html",
+  "browserslist": "since 2015",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.3.2",
+    "@parcel/transformer-webmanifest": "^2.3.2",
+    "parcel": "^2.3.2"
+  }
+}

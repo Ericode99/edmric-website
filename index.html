@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="EDMric is an EDM artist that produces EDM tracks in his spare time. His music is available on most of the popular music streaming platforms."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <!-- <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script> -->
+    <!-- <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script> -->
+
+    <!-- Safari smooth scroll fix -->
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+
+    <script type="module" src="script.js"></script>
+
+    <title>EDMric</title>
+  </head>
+
+  <body>
+    <header class="section-header">
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="#album">Album</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#edm">EDM</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon-mobile-nav icon-menu"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          name="menu-outline"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon-mobile-nav icon-x"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          name="close-outline"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <div class="heading-container">
+          <h1 class="primary-heading">EDMric</h1>
+        </div>
+      </section>
+
+      <section class="section-album" id="album">
+        <div class="container grid grid--2-cols section-album-height">
+          <div class="img-container">
+            <img
+              src="img/EDMric2021.jpg"
+              alt="Album cover of EDMric 2021"
+              class="general-img"
+            />
+          </div>
+          <div class="text-container album-text-container">
+            <span class="title-span">Album</span>
+            <h2 class="secondary-heading">EDMric 2021</h2>
+            <p class="text">
+              EDMric 2021 is EDMric's first released and most recent album. It
+              launched in December 2021 and features EDM songs which EDMric
+              produced all over 2021. The image on the cover was taken by EDMric
+              on his favourite beach in Mexico.
+            </p>
+          </div>
+        </div>
+        <div class="music-providers container">
+          <h3 class="tertiary-heading">Available on</h3>
+          <ul class="btn-provider-list">
+            <li>
+              <a
+                href="https://open.spotify.com/album/1VbNJe6pK4ki7pzhjwTnSM?si=PDXvW-WfQsqAGO1xEySnGw"
+                target="_blank"
+                class="btn-provider"
+              >
+                <img
+                  src="img/spotify.svg"
+                  alt="Spotify logo"
+                  class="provider-icon"
+                />
+                <p class="btn-provider-link">Spotify</p>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://music.apple.com/ch/album/edmric-2021-ep/1601989930"
+                target="_blank"
+                class="btn-provider"
+              >
+                <img
+                  src="img/apple-music.svg"
+                  alt="Apple Music logo"
+                  class="provider-icon"
+                />
+                <p class="btn-provider-link">Apple Music</p>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://music.apple.com/ch/album/edmric-2021-ep/1601989930"
+                target="_blank"
+                class="btn-provider"
+              >
+                <img
+                  src="img/itunes.svg"
+                  alt="ITunes logo"
+                  class="provider-icon"
+                />
+                <p class="btn-provider-link">ITunes</p>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://soundcloud.com/user-55175204/sets/edmric-2021?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+                target="_blank"
+                class="btn-provider"
+              >
+                <img
+                  src="img/soundcloud.svg"
+                  alt="Soundcloud logo"
+                  class="provider-icon"
+                />
+                <p class="btn-provider-link">Soundcloud</p>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://youtube.com/playlist?list=OLAK5uy_lvo6C_9u_HDx7m_BS7OHJtvJ5Xad7fuI4"
+                target="_blank"
+                class="btn-provider"
+              >
+                <img
+                  src="img/youtube-play.svg"
+                  alt="Youtube logo"
+                  class="provider-icon"
+                />
+                <p class="btn-provider-link">Youtube</p>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://deezer.page.link/FopAS7fn9ottxmWL8"
+                target="_blank"
+                class="btn-provider"
+              >
+                <img
+                  src="img/deezer.svg"
+                  alt="Deezer logo"
+                  class="provider-icon"
+                />
+                <p class="btn-provider-link">Deezer</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section-about" id="about">
+        <div
+          class="container grid grid--2-cols section-about-height grid--2-cols-img-rgt-q1"
+        >
+          <div class="text-container about-text-container">
+            <span class="title-span">About</span>
+            <h2 class="secondary-heading margin-bottom-med">EDMric</h2>
+            <p class="text-sm margin-bottom-sm">
+              EDMric always liked music. As a child he played the piano and in
+              high school he sang in the choir. When he was younger he produced
+              some very simple remixes of popular pop songs and took a dj
+              course.
+            </p>
+            <p class="text-sm">
+              EDMric has been very interested in learning how modern music
+              production is done. In 2021 EDMric started producing his own songs
+              as a hobby. His tracks are often happy with high energy. He
+              frequently uses a piano sound in his tracks and likes to create
+              synths.
+            </p>
+          </div>
+          <div class="img-container grid-img-query">
+            <img
+              src="img/EDMric-about.jpg"
+              alt="EDMric artist"
+              class="general-img img-query"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-edm" id="edm">
+        <div
+          class="container grid grid--2-cols section-edm-height grid--2-cols-img-lft-q1"
+        >
+          <div class="img-container">
+            <img
+              src="img/edm-img.jpg"
+              alt="EDM party"
+              class="general-img img-query"
+            />
+          </div>
+          <div class="text-container text-container-edm">
+            <span class="title-span">Genre</span>
+            <h2 class="secondary-heading margin-bottom-med">EDM</h2>
+            <p class="text-sm margin-bottom-sm">
+              Electronic dance music or short EDM is made largely for
+              nightclubs, raves, and festivals. Despite the music industries
+              attempt to create a specific EDM brand, it remains in use as an
+              umbrella term for multiple genres, including dance-pop, house,
+              techno and electro, as well as their respective subgenres.
+            </p>
+            <p class="text-sm margin-bottom-sm">
+              Following the emergence of raving, pirate radio, PartyCrews,
+              underground festivals and an upsurge of interest in club culture
+              during the late 1980s and early 1990s, EDM achieved mainstream
+              popularity in Europe.
+            </p>
+            <p class="text-sm">
+              In the United States however, the government tryed to halt the
+              spread of rave culture due to it being linked to drug use. It was
+              not until the early 2000s that EDM rose to mainstream popularity
+              in the US.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="contact-footer" id="contact">
+          <p class="heading-footer">Contact</p>
+          <div class="footer-link-container">
+            <a class="footer-link" href="mailto:info@edmric.com"
+              >info@edmric.com</a
+            >
+          </div>
+        </div>
+        <div class="resources-footer">
+          <a class="footer-privacy" href="#">Privacy Policy</a>
+        </div>
+        <div class="copyright-footer">
+          <p class="copyright">
+            Copyright &copy; 2022 by EDMric. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

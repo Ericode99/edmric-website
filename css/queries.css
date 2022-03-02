@@ -1,0 +1,357 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/**************************/
+/* BELOW 1200px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 75em) {
+  .primary-heading {
+    font-size: 20rem;
+  }
+
+  .album-text-container {
+    margin-left: 0;
+    margin-right: 8.5rem;
+  }
+
+  /* .img-query {
+    width: 50%;
+  } */
+
+  .grid--2-cols-img-lft-q1 {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .grid--2-cols-img-rgt-q1 {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+@media (max-height: 52em) {
+  .primary-heading {
+    font-size: 20rem;
+  }
+
+  .album-text-container {
+    margin-left: 0;
+    margin-right: 8.5rem;
+  }
+
+  /* .img-query {
+    width: 50%;
+  } */
+
+  .grid--2-cols-img-lft-q1 {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .grid--2-cols-img-rgt-q1 {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+/**************************/
+/* BELOW 1000px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 62.5em) {
+  .primary-heading {
+    font-size: 15rem;
+  }
+
+  .section-album {
+    height: auto;
+  }
+
+  .secondary-heading {
+    font-size: 3.2rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .album-text-container {
+    margin-right: 4.8rem;
+  }
+
+  .text {
+    font-size: 1.8rem;
+  }
+
+  .tertiary-heading {
+    font-size: 2.4rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .music-providers {
+    height: auto;
+    padding-bottom: 4.8rem;
+  }
+
+  .section-album-height {
+    height: auto;
+    margin-top: 4.8rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .general-img {
+    width: 100%;
+  }
+
+  .btn-provider-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 60rem;
+    margin: 0 auto;
+    list-style: none;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 3.2rem;
+    row-gap: 1.8rem;
+  }
+
+  .btn-provider:link,
+  .btn-provider:visited {
+    width: 17rem;
+    height: auto;
+  }
+
+  .section-about-height {
+    height: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .grid-img-query {
+    grid-row: 1 / 2;
+  }
+
+  .section-edm-height {
+    height: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .img-container {
+    display: inline-block;
+    margin: 4.8rem;
+  }
+
+  .img-query {
+    max-width: 20rem;
+  }
+
+  .about-text-container,
+  .text-container-edm {
+    margin: 0 4.8rem 6.4rem 4.8rem;
+  }
+}
+
+/**************************/
+/* BELOW 800px (IPads landsacape) */
+/**************************/
+
+@media (max-width: 50em) {
+  .section-header {
+    height: 8rem;
+  }
+
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .general-img {
+    max-width: 20rem;
+  }
+
+  .album-text-container {
+    margin: 0 4.8rem 3.2rem 4.8rem;
+  }
+
+  /* MOBILE NAVIGATION */
+
+  /* Doesn't work on Safari */
+  /* .section-header {
+    justify-content: end;
+  } */
+
+  .btn-mobile-nav {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .btn-mobile-nav {
+    display: inline-block;
+    z-index: 9999;
+  }
+
+  .main-nav {
+    background-color: #010b0d;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* There's a gap on the botton on Safari, when the height is 100vh */
+    height: 105vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide navigation */
+
+    /* 1) Hide it visually */
+    opacity: 1;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-x {
+    display: block;
+  }
+
+  .nav-open .icon-menu {
+    display: none;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .nav-link:link,
+  .nav-link:visited {
+    font-size: 3rem;
+  }
+
+  .sticky .section-hero {
+    margin-top: 8rem;
+  }
+}
+
+/**************************/
+/* BELOW 600px (IPads) */
+/**************************/
+
+@media (max-width: 37.5em) {
+  .section-header {
+    height: 6rem;
+  }
+
+  .primary-heading {
+    font-size: 12rem;
+  }
+
+  .btn-provider-list {
+    grid-template-columns: 1fr;
+    max-width: 30rem;
+  }
+
+  .btn-provider:link,
+  .btn-provider:visited {
+    width: 25rem;
+  }
+
+  .icon-mobile-nav {
+    height: 4.8rem;
+    color: #fffcd2;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .sticky .section-header {
+    height: 6rem;
+  }
+
+  .sticky .section-hero {
+    margin-top: 6rem;
+  }
+}
+
+/**************************/
+/* BELOW 500px (Phones) */
+/**************************/
+
+@media (max-width: 31em) {
+  html {
+    font-size: 50%;
+  }
+
+  .title-span {
+    font-size: 1.8rem;
+  }
+
+  .secondary-heading {
+    font-size: 4.8rem;
+  }
+
+  .album-img-container {
+    margin-left: 1.8rem;
+    margin-right: 1.8rem;
+  }
+
+  .text-container {
+    margin-left: 1.8rem;
+    margin-right: 1.8rem;
+  }
+
+  .text {
+    font-size: 2.4rem;
+  }
+
+  .img-container {
+    margin-left: 1.8rem;
+  }
+
+  .text-container {
+    margin-left: 1.8rem;
+    margin-right: 1.8rem;
+  }
+
+  .text-sm {
+    font-size: 2.4rem;
+  }
+
+  .tertiary-heading {
+    font-size: 3.2rem;
+  }
+
+  .btn-provider-link {
+    font-size: 2.4rem;
+  }
+
+  .heading-footer {
+    font-size: 4.8rem;
+  }
+
+  .footer-link:link,
+  .footer-link:visited {
+    font-size: 3.2rem;
+  }
+
+  .footer-privacy:link,
+  .footer-privacy:visited {
+    font-size: 1.8rem;
+  }
+
+  .copyright {
+    font-size: 1.8rem;
+  }
+}
+
+/**************************/
+/* FIXING SAFARI FLEXBOX GAP */
+/**************************/
+
+.no-flexbox-gap .nav-list li:not(:last-child) {
+  margin-right: 4.8rem;
+}
